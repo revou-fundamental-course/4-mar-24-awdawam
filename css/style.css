@@ -1,0 +1,131 @@
+body{
+	font-family: 'Poppins', Courier, monospace;
+	background-image: url(../assets/img/bg.jpg);
+	opacity: 0.9;
+}
+
+header>h1 {
+	text-align: center;
+}
+
+.text-color{
+	text-shadow:-1px  1px  0  #41ba45 , 
+	1px  1px  0  #0f6b9c , 
+	1px  -1px  0  #42afac , 
+	-1px  -1px  0  #c6c23f ;;
+	color: #b90e13 ;
+	;
+	font-size: 38px;
+	letter-spacing: 4px;
+
+}
+
+.main-container{
+	display: flex;
+}
+
+.container-item{
+
+	width: 100%;
+	padding: 24px;
+}
+
+.container-item>h2{
+	text-align: center;
+}
+
+.container-result{
+	text-align: center;
+	background-color:aliceblue;
+	padding-top:8px;
+	padding-bottom: 16px;
+	font-family: 'Rajdhani', Courier, monospace;
+}
+
+.container-description{
+	font-family: 'Rajdhani', Courier, monospace;
+	background-color:aliceblue;
+	padding-top:8px;
+	padding-left: 8px;
+	padding-bottom: 16px;
+}
+
+.container-form>div{
+	padding:9px; 
+}
+
+.container-form{
+	text-align: left;
+	background-color:aliceblue;
+	padding: 24px;
+}
+
+.container-form>div{
+	padding: 8px;
+}
+
+.form-item{
+height: 24px;
+background-color: white;
+}
+
+button{
+	border: 0px;
+	height: 32px;
+	padding-right:24px ;
+	padding-left:24px;
+	border-radius: 8px; 
+	opacity: 0.8;
+
+}
+button:hover{
+	border: 0px;
+	height: 32px;
+	padding-right:24px ;
+	padding-left:24px;
+	border-radius: 8px;
+	opacity: 1; 
+	
+	
+
+}
+
+#calculate-button{
+
+	background-color: coral;
+	color: white;
+}
+
+#reset-button{
+	background-color: rgb(16, 195, 49);
+	color: white;
+}
+
+.footer{
+	text-align:center; 
+	background-color: black;
+	color: lime;
+}
+
+.description{
+	color: rgb(240, 255, 245);
+}
+
+ul li{
+	list-style: none;
+}
+
+/* Style untuk hp */
+@media screen and (max-width: 600px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .container-item, .container-result, .container-form {
+        margin: 8px 0;
+    }
+
+    .form-item {
+        width: calc(100% - 16px);
+    }
+}

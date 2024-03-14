@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator BMI</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Madimi+One&family=Ojuju:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Madimi+One&family=Ojuju:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="text-color">Calculator BMI - DawamAw</h1>
+    </header>
+    <main>
+        <div class="main-container">
+            <!-- Form BMI -->
+            <div class="container-item">
+                <h2 class="text-color">Form BMI</h2>
+                <p class="description">Memahami dan mencapai berat badan ideal merupakan langkah penting dalam menjaga kesehatan secara keseluruhan, karena berat badan ideal tidak hanya mempengaruhi penampilan fisik, tetapi juga berhubungan erat dengan risiko penyakit, tingkat energi, kualitas tidur, keseimbangan hormon, dan kualitas hidup secara keseluruhan.</p>
+                <section class="container-form">
+
+                    <div>
+                        <label>Berat Badan (Kg)</label><br>
+                        <input type="number" class="form-item" id="weight-input" >
+                    </div>
+
+                    <div>
+                        <label>Tinggi Badan (cm)</label><br>
+                        <input type="number" class="form-item" id="height-input">
+                    </div>
+
+                    <div>
+                        <label>Jenis Kelamin</label><br>
+                        <input type="radio" name="sex" id="sex-man">
+                        <label for="sex-man">Laki-Laki</label>
+                        <input type="radio" name="sex" id="sex-woman">
+                        <label for="sex-woman">Perempuan</label>
+                    </div>
+                    
+                    <div>
+                        <button type="button" id="calculate-button">Hitung BMI</button>
+                        <button type="button" id="reset-button">Reset</button>
+                    </div>
+
+                </section>
+            </div>
+
+            <!-- Result -->
+            <div class="container-item">
+                <h2 class="text-color">Result</h2>
+                <section class="container-result">
+                    <h1>Berikut Hasil Berat Badan Anda :</h4>
+                    <h1 id="bmi-result">0</h1>
+                    <h2 id="bmi-result-description">Anda Memiliki Berat Badan Ideal</h2>
+                </section>
+                <section>
+                    <div class="container-description">
+                    <h2>Keunggulan Fitur : </h2>
+                        <ul>
+                            <li>Menghitung Berat Badan</li>
+                            <li>Menentukan Kategori Berat Badan Ideal Atau Tidak</li>
+                        </ul>
+                        <p>Terimakasih Telah Menggunakan Calculator BMI ini!! </p>
+                    </div>
+                </section>
+            </div>
+           
+            
+        </div>
+    </main>
+
+    <footer>
+        <section>
+            <p class="text-color footer">DawamAw 2024</p>
+        </section>
+    </footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
